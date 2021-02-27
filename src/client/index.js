@@ -9,9 +9,15 @@ import './styles/header.scss'
 
 console.log(checkForName);
 
-alert("I EXIST")
+// alert("I EXIST")
 
 export {
     checkForName,
     handleSubmit
 }
+
+//get the submit button
+const btn = document.querySelector('input[type="submit"]');
+console.log(btn);
+
+btn.addEventListener('click', handleSubmit);
